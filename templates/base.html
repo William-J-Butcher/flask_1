@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="/static/css/style.css"/>
+    <title>{% block title %} Мой сайт {% endblock %}</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <a href="/" class="nav-link">Основная</a>
+        <a href="/clothing/" class="nav-link">Одежда</a>
+        <a href="/jackets/" class="nav-link">Куртки</a>
+        <a href="/shoes/" class="nav-link">Обувь</a>
+      </nav>
+    </header>
+    <main>
+        {% block content %} 
+
+        Страница не заполнена 
+
+        {% endblock %}
+    </main>
+    <footer>
+      <div class="row fixed-bottom modal-footer">
+        <hr />
+        <p>Все права защищены &copy;</p>
+      </div>
+    </footer>
+  </body>
+</html>
